@@ -6,7 +6,7 @@
 #include <QLabel>
 #include <QVBoxLayout>
 #include <QGroupBox>
-#include <tr1/memory>
+#include <memory>
 
 class ButtonWithName : public QWidget
 {
@@ -30,12 +30,12 @@ protected:
     virtual  QSize sizeHint () const;
 
 private:
-    std::tr1::shared_ptr<QLabel> nameLabel;
-    std::tr1::shared_ptr<QGroupBox>  Group;
-    std::tr1::shared_ptr<Button>  Btn;
-    std::tr1::shared_ptr<QFont>  font;
-    std::tr1::shared_ptr<QVBoxLayout> layout;
-    std::tr1::shared_ptr<QPalette>  palette;
+    std::shared_ptr<QLabel> nameLabel;
+    std::shared_ptr<QGroupBox>  Group;
+    std::shared_ptr<Button>  Btn;
+    std::shared_ptr<QFont>  font;
+    std::shared_ptr<QVBoxLayout> layout;
+    std::shared_ptr<QPalette>  palette;
     QList<QPixmap> backGd;
     bool m_isEnter;
 };

@@ -10,7 +10,7 @@
 #include <stdlib.h>
 
 MainWindow *MainWindow::instance = NULL;
-pthread_once_t MainWindow::initOnce = 0;
+pthread_once_t MainWindow::initOnce = PTHREAD_ONCE_INIT;
 
 
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent),

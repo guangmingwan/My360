@@ -9,7 +9,7 @@
 #include <QSystemTrayIcon>
 #include <centerwidget.h>
 #include <basewidget.h>
-#include <tr1/memory>
+#include <memory>
 #include <iostream>
 #include <pthread.h>
 
